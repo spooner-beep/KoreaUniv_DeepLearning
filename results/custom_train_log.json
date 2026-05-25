@@ -1,0 +1,8 @@
+{
+  "best_val_acc": 0.5449847621571485,
+  "resnet18_baseline": 0.670465,
+  "beat_resnet": false,
+  "preset": "tuned_v4",
+  "teacher_used_for_training": true,
+  "final_model_architecture": "CustomCNN"
+}

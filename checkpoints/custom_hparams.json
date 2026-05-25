@@ -1,0 +1,38 @@
+{
+  "channels": [
+    48,
+    96,
+    192,
+    320,
+    512
+  ],
+  "use_residual": true,
+  "conv_dropout": 0.05,
+  "encoder_dropout": 0.25,
+  "head_dropout": 0.15,
+  "architecture": "modern_v4",
+  "blocks_per_stage": [
+    1,
+    2,
+    2,
+    2,
+    1
+  ],
+  "optimizer": "adamw",
+  "lr": 0.0003,
+  "weight_decay": 0.03,
+  "max_epochs": 30,
+  "patience": 8,
+  "scheduler": "cosine",
+  "grad_clip_norm": 1.0,
+  "label_smoothing": 0.05,
+  "mixup_alpha": 0.1,
+  "use_ema": true,
+  "ema_decay": 0.999,
+  "use_distillation": true,
+  "distill_alpha": 0.65,
+  "distill_temperature": 3.0,
+  "batch_size": 48,
+  "augment": "default",
+  "use_class_weights": false
+}
